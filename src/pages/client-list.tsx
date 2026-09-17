@@ -4,7 +4,7 @@ import { ResourcePage } from "@neton/application-front-resource";
 const status = [{ label: "启用", value: 1 }, { label: "停用", value: 0 }];
 export default function Page() { return <ResourcePage config={{
   resourceKey: "platform-client", eyebrow: "OPEN PLATFORM", title: "客户端管理", description: "维护开放平台调用方、联系信息与访问凭证。密钥只显示脱敏值。",
-  endpoint: "/platform/client", permissions: { page: "platform:client:page", create: "platform:client:create", update: "platform:client:update", delete: "platform:client:delete" },
+  endpoint: "/platform/client", permissions: { page: "platform:client:query", create: "platform:client:create", update: "platform:client:update", delete: "platform:client:delete" },
   mapSave: (record) => {
     if (!record.id) return record;
     const { appSecret: _maskedSecret, ...profile } = record;
