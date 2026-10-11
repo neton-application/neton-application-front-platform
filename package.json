@@ -4,7 +4,11 @@
   "private": true,
   "type": "module",
   "sideEffects": false,
-  "exports": {"./manifest": "./src/manifest.ts", "./pages/*": "./src/pages/*.tsx"},
+  "exports": {
+    "./manifest": "./src/manifest.ts",
+    "./pages/*": "./src/pages/*.tsx",
+    "./locales/*": "./src/locales/*.ts"
+  },
   "peerDependencies": {
     "@neton/application-front-contract": "^1.0.0",
     "@neton/application-front-kit": "^1.0.0",
@@ -24,5 +28,7 @@
     "react-dom": "^19.2.0",
     "typescript": "^5.7.0"
   },
-  "scripts": {"typecheck": "tsc --noEmit"}
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
 }
