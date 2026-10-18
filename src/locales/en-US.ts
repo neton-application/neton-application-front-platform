@@ -77,6 +77,20 @@ const messages: Record<string, string> = {
   "stat.field.statDate": "Date",
   // 目录菜单（按菜单路径），见壳的菜单翻译
   "menu./platform": "Open platform",
+  // 业务错误机器码（后端 PlatformErrorCodes，spec application/platform-errors）
+  "error.CLIENT_NOT_FOUND": "Client not found. It may have been deleted.",
+  "error.CONTACT_MOBILE_INVALID": "Enter a valid 11-digit contact phone number.",
+  "error.CLIENT_NOT_BOUND": "API access is not enabled for this account yet.",
+  "error.LOG_NOT_FOUND": "Call log not found.",
+  "error.TIMESTAMP_INVALID": "timestamp must be a Unix time in seconds.",
+  "error.TIMESTAMP_EXPIRED": "Request expired: timestamp is more than 5 minutes from server time.",
+  "error.APP_ID_INVALID": "appId is invalid or disabled.",
+  "error.SIGNATURE_INVALID": "Signature verification failed.",
+  "error.ORDER_ID_REQUIRED": "orderId is required.",
+  "error.ORDER_NOT_FOUND": "Order not found.",
+  "error.CHARGE_SERVICE_UNAVAILABLE": "Billing is temporarily unavailable. Please try again later.",
+  "error.ORDER_QUERY_RATE_LIMITED": "Too many order queries. Please try again later.",
+  "error.ORDER_CREATE_RATE_LIMITED": "Too many orders. Please try again later.",
 };
 
 export default messages;

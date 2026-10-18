@@ -77,6 +77,20 @@ const messages: Record<string, string> = {
   "stat.field.statDate": "统计日期",
   // 目录菜单（按菜单路径），见壳的菜单翻译
   "menu./platform": "开放平台",
+  // 业务错误机器码（后端 PlatformErrorCodes，spec application/platform-errors）
+  "error.CLIENT_NOT_FOUND": "接入方不存在，可能已被删除",
+  "error.CONTACT_MOBILE_INVALID": "联系人手机号格式不正确，请填写 11 位手机号",
+  "error.CLIENT_NOT_BOUND": "当前账号还没有开通 API 接入",
+  "error.LOG_NOT_FOUND": "调用日志不存在",
+  "error.TIMESTAMP_INVALID": "timestamp 格式不正确，应为秒级时间戳",
+  "error.TIMESTAMP_EXPIRED": "请求已过期，timestamp 与服务器时间相差超过 5 分钟",
+  "error.APP_ID_INVALID": "appId 无效或已停用",
+  "error.SIGNATURE_INVALID": "签名校验失败",
+  "error.ORDER_ID_REQUIRED": "缺少 orderId",
+  "error.ORDER_NOT_FOUND": "订单不存在",
+  "error.CHARGE_SERVICE_UNAVAILABLE": "计费服务暂不可用，请稍后再试",
+  "error.ORDER_QUERY_RATE_LIMITED": "订单查询过于频繁，请稍后再试",
+  "error.ORDER_CREATE_RATE_LIMITED": "下单过于频繁，请稍后再试",
 };
 
 export default messages;

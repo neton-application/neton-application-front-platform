@@ -6,7 +6,7 @@ export default function Page() {
   const t = useT("platform");
   const status = [{ label: t("common.status.enabled"), value: 1 }, { label: t("common.status.disabled"), value: 0 }];
   return <ResourcePage config={{
-  resourceKey: "platform-client", eyebrow: t("client.eyebrow"), title: t("client.title"), description: t("client.description"),
+  resourceKey: "platform-client", errorNamespace: "platform", eyebrow: t("client.eyebrow"), title: t("client.title"), description: t("client.description"),
   endpoint: "/platform/client", permissions: { page: "platform:client:query", create: "platform:client:create", update: "platform:client:update", delete: "platform:client:delete" },
   mapSave: (record) => {
     if (!record.id) return record;
